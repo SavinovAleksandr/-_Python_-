@@ -27,20 +27,38 @@
 # ===== ВАШ КОД НИЖЕ =====
 
 # 1. Создайте переменные
-from re import A
+project_name = "StabLimit"
+invalible_voltage = 220.0
+iterations = 10
+calculation_completed = False
+allowed_voltage_deviation = 1.0
 
-
-A
 # 2. Выведите типы переменных
-
+print("project_name: ", type(project_name))
+print("invalible_voltage: ", type(invalible_voltage))
+print("iterations: ", type(iterations))
+print("calculation_completed: ", type(calculation_completed))
+print("allowed_voltage_deviation: ", type(allowed_voltage_deviation))
 # 3. Измените напряжение (увеличьте на 10%)
-
+new_voltage = invalible_voltage * 1.1
 # 4. Создайте строку с информацией
+full_information = f"Project: {project_name}, Initial voltage: {invalible_voltage} V, Iterations: {iterations}, Calculation completed: {calculation_completed}, Allowed voltage deviation: {allowed_voltage_deviation} V"
 
 # 5. Проверьте диапазон напряжения
+in_range = new_voltage >= invalible_voltage - allowed_voltage_deviation and new_voltage <= invalible_voltage + allowed_voltage_deviation
+print("in_range: ", in_range)
 
+print("full_information: ", full_information)
 
 # ===== ПРОВЕРКА =====
 # Запустите этот скрипт и проверьте вывод
 # Убедитесь, что все работает корректно
+
+# ЗАДАНИЕ ВЫПОЛНЕНО
+
+"""
+задание выполнено
+"""
+
+# вдлаваываыв
 
